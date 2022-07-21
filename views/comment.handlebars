@@ -1,0 +1,52 @@
+<div>
+    <div class="sign">
+        <h2 id="bt" data-user="{{user.id}}">Comment</h2>
+        <form class="comment-form">
+            <div>
+                <label for="comment">write a comment</label>
+            </div>
+            <div>  
+                <textarea id="comment" name="comment"
+                rows="5" cols="70"></textarea>
+            </div>
+            <div>
+                <button >Submit</button>
+            </div>  
+        </form>
+    </div>
+    <div class="post_title border_post_title">
+        <h2>{{title}}</h2>
+        <div class="post_title ">    
+            <h2>Posted by:</h2>
+            <h2 id="user">{{user.username}}</h2>
+            <h2>Post date</h2>
+            <h2>{{format_date  post_date}}</h2>
+        </div>
+    </div>
+    <div class="border_content">
+        <p>{{post_content}}</p>
+    </div>
+    <div class="comment_title">
+        <div Class="comment">
+            <h3>Comments</h3>
+        </div>
+        {{#each comments as |comment|}}
+        <div class="outter">
+                <div Class="comment">
+                    {{comment.comment_content}}
+                </div>
+                <div Class="comment">
+                    <div class="comment_date ">    
+                        <h3>Comment by:</h3>
+                        <h3>{{comment.comment_by}}</h3>
+                        <h3>Comment date:</h3>
+                        <h3>{{format_date comment.comment_date}}</h3>   
+                    </div>
+                </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<script src="/js/newcomment.js"></script>
+

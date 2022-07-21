@@ -1,0 +1,175 @@
+
+
+
+header{
+  background-color: rgb(162, 97, 97);
+}
+
+.post_title {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+}
+
+section{
+  display: block;
+  height:max-content;
+}
+
+.border_post_title{
+  border: solid black;
+}
+
+.border_content{
+  border: solid black;
+
+    }
+
+p{
+  font-size: 20px;
+
+}
+
+h2{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer{
+  text-align: center;
+}
+
+.sign{
+  padding: 20px;
+  display: flex;
+}
+
+h3{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.comment{
+display:block
+
+}
+
+.comment_title {
+display: block;
+border: solid black;
+
+align-items: center;
+height: max-content;
+}
+
+.comment_date {
+display: flex;
+/* Forces elements to the next line if they don't fit */
+flex-wrap: wrap;
+justify-content:flex-start;
+align-items: center;
+}
+
+.create{
+padding:20px;
+display: block;
+
+
+
+}
+
+.title_margin{
+margin-left: 20px;
+}
+
+.create2{
+padding:5px;
+display:block;
+text-align: center;
+}
+
+.outter{
+  padding-top:10px;
+}
+
+  .no-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration:underline;
+    color:#551A8B;
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    align-items: center;
+    padding: 20px;
+  }
+
+  
+h1{
+  font-size: 60px;
+  padding-left: 90px;
+}
+
+.flex{
+  display:flex;
+  -ms-flex-align: start;
+  flex-wrap: wrap ;
+  
+};
+
+li{
+  padding: 50px;
+}
+
+.outter1{
+  padding-bottom: 50px;
+}
+
+.buttons0{
+  font-size: 20px;
+}
+
+.logisign{
+  margin-left: 26px;
+}
+
+.signup{
+  margin-left: 26px;
+}
+
+.signup0{
+  margin-left: -3px;
+}
+
+.sign0{
+  padding: 20px;
+  display: flex;
+  margin-left: -15px;
+}
+
+.createbutton{
+  font-size: 20px;
+}
+
+.buttoncont{
+  padding-bottom: 20px;
+}
+
+.titlename{
+  font-weight: bolder;
+  color: rgb(162, 97, 97) ;
+  padding-left: 100px;
+  padding-top: 0;
+  font-size: 40px;
+}
+
+.outter3{
+  padding-top:0;
+  
+}

@@ -1,0 +1,57 @@
+<div class="outter3">
+    <div >
+        <h2 class="titlename">My dashboard-You are logged-in as {{username}}</h2>
+        
+    </div>
+    <div class="buttoncont">
+        <button class="createbutton"><a href="/create">create new post</a></button>
+
+    </div >
+    <div class="post-list">
+        {{#each posts as |post| }}
+            <div class="outter1">
+                <div class="post_title border_post_title">
+                    <h2>{{post.title}}</h2>
+                    <div class="post_title ">    
+                        <h2>post date</h2>
+                        <h2>{{format_date post.post_date}}</h2>
+                    </div> 
+                </div>
+                <div class="border_content">
+                    <p>{{post.post_content}}</p>
+                </div>
+                <div class="comment_title">
+                    <div Class="comment">
+                        <h3>Comments</h3>
+                    </div>
+                    {{#each post.comments as |comment| }}
+                    <div Class="comment">
+                        <p>{{comment.comment_content}}</p>
+                    </div>
+                    
+                    <div Class="comment">
+                        <div class="comment_date ">    
+                            <h3>comment by:</h3>
+                            <h3>{{comment.comment_by}}</h3>
+                            <h3>comment date:</h3>
+                            <h3>{{format_date comment.comment_date}}</h3>   
+                        </div>
+                    </div>
+                    {{/each}}
+                    
+                </div>
+                <div>
+                    <button class="buttons0" data-id="{{post.id}}">delete</button>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="/js/deletepost.js"></script>

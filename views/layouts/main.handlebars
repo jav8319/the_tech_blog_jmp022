@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tech blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <nav id="nav">
+                <ul class="flex">
+                    <li><h2><a href="/">Home</a></h2></li>
+                    {{#if loggedIn}}
+                    <li><h2><a href="/mydashboard">Dashboard</a></h2></li>
+                    {{else}}
+                    <li><h2><a href="/login">Dashboard</a></h2></li>
+                    {{/if}}
+                    
+                    {{#if loggedIn}}
+                    <li><button class="no-button" id="logout">logout</button></li>
+                    {{else}}
+                    <li><h2><a href="/login">Login</a></h2></li>
+                    {{/if}}
+                </ul>
+            </nav>
+            <h1>The Tech Blog</h1>    
+        </header>
+        <main>
+            {{{ body }}}
+        </main>
+        <footer>
+                <h3>Developed by JMP</h3>
+        </footer>
+    </div>
+
+<!-- Render script for logged in users only -->
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
+</body>
+
+</html>
