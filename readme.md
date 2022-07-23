@@ -22,7 +22,7 @@ Go to https://secret-tundra-30697.herokuapp.com/. then access the posts by click
 
 ## Questions  
 
-I can be reached at <> or  [github]https://jav8319github.com/>
+I can be reached at <> or  [github]https://github.com/jav8319>
 
 ## License  
 
